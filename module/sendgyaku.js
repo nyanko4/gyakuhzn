@@ -30,4 +30,4 @@ async function sendgyaku(body, messageId, roomId, accountId) {
   }
 }
 
-module.exports = sendgyau;
+module.exports = sendgyaku;
