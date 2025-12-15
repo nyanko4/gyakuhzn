@@ -27,7 +27,7 @@ app.use(session({
 
 // 認証ミドルウェア
 app.use((req, res, next) => {
-  const publicRoutes = ["/login", "/serach", "/send", "/getchat"];
+  const publicRoutes = ["/login", "/serach", "/send", "/getchat", "mention"];
   const isPublic = publicRoutes.some(route => req.path.startsWith(route));
   if (!isPublic && req.cookies.nyanko_a !== "ok") {
     // セッションに元のURLを保存してリダイレクト
