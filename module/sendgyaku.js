@@ -1,3 +1,4 @@
+const supabase = require("../supabase/client");
 const { sendchatwork } = require("../ctr/message");
 
 async function sendgyaku(body, messageId, roomId, accountId) {
